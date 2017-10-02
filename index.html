@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Percentage Calculators</h1>
+        
+        <form id="percentageCalculator">
+            <p>Choose:</p>
+            <select name="question" id="question" onchange="showQuestionText()" >
+                <option value="xIsWhatPercentOfY">X is what % of Y?</option>
+                <option value="whatIsYPercentOfX">What is Y% of X?</option>
+                <option value="xIsYPercentOfWhat">X is Y% of what?</option>
+                <option value="whatPercentOfXIsY">What % of X is Y?</option>
+                <option value="xPercentOfWhatIsY">X% of what is Y?</option>
+                <option value="yPercentOfXIsWhat">Y% of X is what?</option>
+            </select>
+            <script>
+                function showQuestionText() {
+                    
+                    if(document.getElementById("question").value == "xIsWhatPercentOfY") {
+                        frontQuestionText.innerText = "";
+                        middleQuestionText.innerText = " is what % of ";
+                        endQuestionText.innerText = "?";
+                    }
+                    else if(document.getElementById("question").value == "whatIsYPercentOfX") {
+                        frontQuestionText.innerText = "What is ";
+                        middleQuestionText.innerText = " % of ";
+                        endQuestionText.innerText = "?";
+                    }
+                    else if(document.getElementById("question").value == "xIsYPercentOfWhat") {
+                        frontQuestionText.innerText = "";
+                        middleQuestionText.innerText = " is ";
+                        endQuestionText.innerText = " % of what?";
+                    }
+                    else if(document.getElementById("question").value == "whatPercentOfXIsY") {
+                        frontQuestionText.innerText = "What % of ";
+                        middleQuestionText.innerText = " is ";
+                        endQuestionText.innerText = "?";
+                    }
+                    else if(document.getElementById("question").value == "xPercentOfWhatIsY") {
+                        frontQuestionText.innerText = "";
+                        middleQuestionText.innerText = " % of what is ";
+                        endQuestionText.innerText = "?";
+                    }
+                    else if(document.getElementById("question").value == "yPercentOfXIsWhat") {
+                        frontQuestionText.innerText = "";
+                        middleQuestionText.innerText = "% of ";
+                        endQuestionText.innerText = "is what?";
+                    }
+                    else {
+                        frontQuestionText.innerText = "";
+                        middleQuestionText.innerText = " is what % of ";
+                        endQuestionText.innerText = "?";
+                    }
+                }
+            </script>
+            
+                
+            <br><br>
+            <p id="frontQuestionText"></p>
+            <input type="text" id="numField1">
+            <p id="middleQuestionText"> is what % of </p>
+            <input type="text" id="numField2">
+            <p id="endQuestionText">?</p>
+            <br><br>
+            <input type="submit" value="Calculate">
+        </form>
+        <h3 id="resultField"></h3>
+        <script type="text/javascript" src="calc.js"></script>
+    </body>
+</html>

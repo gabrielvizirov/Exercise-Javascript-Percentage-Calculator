@@ -1,0 +1,18 @@
+ 54. Exercise: Percentage Calculators
+
+http://blog.devslopes.com/p/0c2235cf-e2e9-4843-a62...
+
+Exercise - Javascript Percentage Calculator
+15 JUNE 2017 by Mark Price
+We have created one type of percentage calculation.
+
+You will build the rest. Have your calculator solve the following questions:
+
+1. What is Y% of X?
+2. X is Y% of what?
+3. What % of X is Y?
+4. X% of what is Y?
+5. Y% of X is what?
+You can create multiple calculators, or create a dropdown that chooses between the formulas.
+
+Hint: Check out this website (https://www.calculatorsoup.com/calculators/math/percentage.php)
